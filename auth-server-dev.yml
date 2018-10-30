@@ -1,3 +1,5 @@
+name: 啊哈哈哈哈222
+
 spring:
   datasource:
     druid:
@@ -63,7 +65,7 @@ spring:
 
   # rabbitmq 配置
   rabbitmq:
-    host: 127.0.0.1
+    host: 101.132.136.225
     port: 5672
     username: rabbit
     password: 123456
