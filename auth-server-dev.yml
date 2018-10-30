@@ -1,3 +1,5 @@
+name: 张三
+
 spring:
   datasource:
     druid:
