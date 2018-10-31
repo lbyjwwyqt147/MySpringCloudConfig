@@ -1,5 +1,3 @@
-name: 啊哈哈哈哈222000111
-
 spring:
   datasource:
     druid:
