@@ -57,8 +57,8 @@ spring:
       # none： 什么也不做；
       # validate：会验证类里的属性和表字段是否一致，不一致，则会报错；
       naming:
-        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-        #physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        #physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy  #　策略会有大小写区别 自动根据实体类生成表时 表名和字段都为小写
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  # 无修改命名策略：
 
 
   # rabbitmq 配置
