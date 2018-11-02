@@ -48,7 +48,7 @@ spring:
     database: MYSQL
     generate-ddl: true
     show-sql: true
-    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
       # update：表示自动根据model对象来更新表结构，启动 hibernate 时会自动检查数据库，如果缺少表则自动建表；缺少列则自动添加列；
@@ -60,6 +60,9 @@ spring:
         #physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy  #　策略会有大小写区别 遇到大写字母 加”_”的命名 自动根据实体类重新生成表时（实体类即使配置了@Table 如果大小写不匹配也会生成表） 表名和字段都为小写
         #physical-strategy: pers.liujunyi.common.configuration.MySQLUpperCaseStrategy  #指定自定义策略 将表名、字段字母全部转为大写 和数据库匹配
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  # 无修改命名策略：不重新创建新的数据库表（使用@Table 配置的表）
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
 
   # rabbitmq 配置
   rabbitmq:
