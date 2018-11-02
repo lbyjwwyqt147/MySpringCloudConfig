@@ -86,4 +86,4 @@ spring:
 # 不需要拦截的url地址 多个用,隔开 不能有空格
 security:
   exclude:
-    antMatchers: /oauth/**,/login,/api/v1/user/register
+    antMatchers: /oauth/**,/login,/api/v1/user/login,/api/v1/user/register
