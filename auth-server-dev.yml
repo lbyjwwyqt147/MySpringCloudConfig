@@ -84,7 +84,7 @@ spring:
       max-active: 20
       max-wait: 2
 
-# 不需要拦截的url地址
-mySecurity:
+# 不需要拦截的url地址 多个用,隔开 不能有空格
+security:
   exclude:
-    antMatchers: /oauth/**,/login,/home
+    antMatchers: /oauth/**,/login,/api/v1/user/register
