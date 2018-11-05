@@ -91,5 +91,5 @@ security:
   jwt:
     signing:
       key: BCrypt       # jwt 密匙 key 以此生成秘钥，以此进行签名
-    access-token-validity: 60 * 60 * 24 * 7  # 7天 60 * 60 * 24 * 7 客户端的access_token的有效时间值(单位:秒)
-    refresh-token-validity: 60 * 60 * 24 * 30 # 30天 60 * 60 * 24 * 30 客户端的refresh_token的有效时间值(单位:秒)
+    access-token-validity: 604800  # 7天 60 * 60 * 24 * 7 客户端的access_token的有效时间值(单位:秒)
+    refresh-token-validity: 2592000 # 30天 60 * 60 * 24 * 30 客户端的refresh_token的有效时间值(单位:秒)
